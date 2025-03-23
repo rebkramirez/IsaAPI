@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Agregar servicios al contenedor.
 builder.Services.AddControllers();
 
-// Registrar el DbContext con la cadena de conexión
+// Registrar el DbContext con la cadena de conexiÃ³n
 builder.Services.AddDbContext<IsacontrolesContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CnnStr")));
 
@@ -24,7 +24,7 @@ builder.Services.AddCors(options =>
     });
 });
 
-// Swagger (documentación interactiva de tu API)
+// Swagger (documentaciÃ³n interactiva de tu API)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -45,4 +45,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+//comentario
 
